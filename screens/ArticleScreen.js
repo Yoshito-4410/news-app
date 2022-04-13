@@ -1,5 +1,5 @@
 import { StyleSheet, SafeAreaView, Text } from "react-native";
-import { backgroundColor } from "react-native/Libraries/Components/View/ReactNativeStyleAttributes";
+import WebView from "react-native-webview";
 
 const styles = StyleSheet.create({
   container: {
@@ -11,7 +11,7 @@ const styles = StyleSheet.create({
 export default ArticleScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>article screen</Text>
+      <WebView source={{ uri: "https://expo.io" }} />
     </SafeAreaView>
   );
 };
